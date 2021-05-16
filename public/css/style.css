@@ -1,0 +1,11 @@
+.well1 { 
+	padding: 15px; 
+}
+/*.fbutton {
+    display: ruby-base;
+}*/
+.fbutton {
+    display: flex;
+    padding-top: 17px;
+    justify-content: right;
+}
