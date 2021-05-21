@@ -79,28 +79,6 @@ To modify the schema, we use Laravel’s schema builder. Before modifying the fi
 composer require doctrine/dbal
 ````
 
-````
-../app/Http/Kernel.php
-
-use Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
-
-...
-
-    protected $middlewareGroups = [
-        ...
-
-        'api' => [
-            EnsureFrontendRequestsAreStateful::class,
-            'throttle:60,1',
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
-        ],
-    ];
-
-    ...
-],
-
-````
-
 ## Step 5:Step to Add and modify migrations.
 
 ````
